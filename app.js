@@ -58,7 +58,7 @@ app.get('/api/reply/:message', async (req, res) => {
         }
 
         // If no match found, return the default response
-        res.json({ reply: "Kindly teach me!!!" });
+        res.json({ reply: "Kindly teach me ! 😿" });
     } catch (error) {
         console.error('Failed to fetch reply:', error);
         res.status(500).json({ error: 'Failed to fetch reply', details: error.message });
